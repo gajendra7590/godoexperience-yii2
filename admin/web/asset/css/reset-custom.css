@@ -1,0 +1,348 @@
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('../fonts/fontawesome-webfont.eot');
+    src: url('../fonts/fontawesome-webfont.eot') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff2') format('woff2'), url('../fonts/fontawesome-webfont.woff') format('woff'), url('../fonts/fontawesome-webfont.ttf') format('truetype')
+}
+
+@font-face {
+    font-family: 'SF Compact Text Regular';
+    src: url('../fonts/sfcompact/SFCompactText-Regular.woff2') format('woff2'), url('../fonts/sfcompact/SFCompactText-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF Compact Text Medium';
+    src: url('../fonts/sfcompact/SFCompactText-Medium.woff2') format('woff2'), url('../fonts/sfcompact/SFCompactText-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF Compact Text Semibold';
+    src: url('../fonts/sfcompact/semibold/SFCompactText-Semibold.woff2') format('woff2'), url('../fonts/sfcompact/semibold/SFCompactText-Semibold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+
+/* Defalut Body SCSS */
+
+body {
+    color: #000;
+    font-family: 'SF Compact Text Regular';
+    padding-right: 0 !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    font-weight: 600;
+    font-style: normal;
+    font-family: 'SF Compact Text Semibold';
+    color: #0b0827;
+}
+
+ul,
+li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100% !important;
+    padding: 0;
+    margin: 0;
+}
+
+a,
+a:hover,
+a:focus {
+    text-decoration: none;
+}
+
+a,
+button,
+.cst_btn {
+    -moz-transition: all .4s ease;
+    -ms-transition: all .4s ease;
+    -webkit-transition: all .4s ease;
+    -o-transition: all .4s ease;
+    transition: all .4s ease;
+}
+
+img {
+    border: none;
+    max-width: 100%;
+}
+
+
+/*modal dropdown*/
+
+.modal-backdrop {
+    background: rgba(2, 16, 36, 0.45);
+}
+
+.modal-backdrop.in {
+    opacity: 1;
+}
+
+
+/*login page */
+
+.form_group_modify {
+    margin-bottom: 10px;
+}
+
+.label_modify {
+    margin-bottom: 8px;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #42526e;
+    opacity: 0.85;
+}
+
+.input_modify {
+    color: #42526e;
+    width: 100%;
+    height: 50px;
+    background: #fff;
+    border-radius: 2px;
+    padding: 10px 16px;
+    font-size: 15px;
+    line-height: 1.33;
+    display: block;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.12);
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    letter-spacing: 0.3px;
+    outline: none;
+}
+
+.input_modify:hover {
+    border-color: #42526e;
+}
+
+.input_modify:focus {
+    border-color: #25c8b5;
+}
+
+
+/*login page */
+
+
+/*add new button*/
+
+.add_new_btn {
+    background: #25c8b5;
+    color: #fff;
+    padding: 8px 10px;
+    border-radius: 4px;
+    font-size: 15px;
+    transition: 0.5s ease-in-out;
+    display: inline-block;
+}
+
+.add_new_btn:hover,
+.add_new_btn:focus {
+    background: #26b1a1;
+    color: #fff;
+}
+
+.add_new_btn .right_down_img {
+    margin-right: 5px;
+}
+
+.add_new_btn .left_down_img {
+    margin-left: 5px;
+}
+
+.label_modifier,
+.control-label {
+    font-size: 15px;
+    color: #42526e;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.label_modifier sub {
+    vertical-align: text-top;
+    color: #fc172c;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.select_mod {
+    font-size: 15px;
+    font-weight: 400;
+    color: #42526e;
+    border-color: #d61212;
+    box-shadow: none;
+    height: 45px;
+    -webkit-appearance: none;
+    appearance: none;
+    position: relative;
+    background: #fff url('../images/backgrounds/down_arrow1.png') no-repeat right 1.1rem center !important;
+    padding-right: 30px;
+}
+
+.input_modifier {
+    font-size: 14px;
+    font-weight: 400;
+    color: #42526e;
+    border-color: #ecedf0;
+    box-shadow: none;
+    height: 45px;
+}
+
+.input_modifier:hover {
+    border-color: #42526e;
+}
+
+.input_modifier:focus {
+    border-color: #25c8b5;
+    box-shadow: none;
+}
+
+.btn {
+    outline: none !important;
+}
+
+.btn_primary {
+    background-color: #25c8b5;
+    border-color: #25c8b5;
+    color: #fff;
+}
+
+.btn_primary:hover,
+.btn_primary:focus {
+    background-color: #26b1a1;
+    border-color: #26b1a1;
+    color: #fff;
+}
+
+.btn_primary--outline {
+    background: transparent;
+    border: 2px solid #25c8b5;
+    color: #26b1a1;
+}
+
+.btn_primary--outline:hover {
+    background: #25c8b5;
+    color: #ffffff;
+}
+
+.btn-secondary {
+    background-color: #42526e;
+    border-color: #42526e;
+    color: #fff;
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus {
+    color: #fff;
+    background-color: #4d596f;
+    border-color: #4d596f;
+}
+
+.cst_btn {
+    padding: 8px 15px;
+    font-size: 16px;
+}
+
+.mr-10 {
+    margin-right: 10px;
+}
+
+.ml-10 {
+    margin-left: 10px;
+}
+
+.form-control::-webkit-input-placeholder {
+    color: #42526e;
+}
+
+.form-control::-moz-placeholder {
+    color: #42526e;
+}
+
+.form-control:-ms-input-placeholder {
+    color: #42526e;
+}
+
+.form-control:-moz-placeholder {
+    color: #42526e;
+}
+
+.input_img {
+    box-sizing: border-box;
+    background: #fff url("../images/backgrounds/icn_calendar.png") no-repeat right 1.1rem center !important;
+    padding-right: 45px;
+    transition: all 0.1s ease-in-out;
+    background-size: 11px;
+}
+
+textarea {
+    resize: none;
+}
+
+.alert_box {
+    margin: 15px 0px 10px;
+    padding: 15px;
+    font-size: 15px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+}
+
+.input_search {
+    font-size: 15px;
+    font-weight: 400;
+    color: #42526e;
+    border-color: #d61212;
+    box-shadow: none;
+    height: 45px;
+    -webkit-appearance: none;
+    appearance: none;
+    position: relative;
+    background: url('../images/backgrounds/search_icn.png') no-repeat left 2.1rem center !important;
+    padding-left: 56px;
+}
+
+.cst-link {
+    color: #1c75f9;
+}
+
+.cst-link:hover,
+.cst-link:focus {
+    color: #0351c7;
+}
+
+.admin-alert {
+    float: left;
+    width: 100%;
+}
+
+.unactive__Status i {
+    color: #d61212;
+    font-size: 13px;
+}
+
+.active__Status i {
+    color: #25c8b5;
+    font-size: 13px;
+}
